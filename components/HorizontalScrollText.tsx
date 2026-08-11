@@ -55,7 +55,9 @@ export default function HorizontalScrollText({ text }: { text: string }) {
           <span
             key={i}
             aria-hidden={i !== 0 ? "true" : undefined}
-            className="text-4xl font-semibold uppercase tracking-tight text-white sm:text-6xl md:text-[8vw]"
+            className={`text-4xl font-semibold uppercase tracking-tight text-white sm:text-6xl md:text-[8vw] ${
+              i !== 0 ? "hidden md:block" : ""
+            }`}
           >
             {text}
           </span>

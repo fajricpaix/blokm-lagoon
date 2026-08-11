@@ -55,7 +55,7 @@ export default function Hero({ content }: { content: HeroContent }) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
+        <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/20" />
       </div>
       <div className="relative z-10 flex w-full flex-col gap-4 px-6 pb-20 sm:px-12 sm:pb-28">
         <span className="hero-eyebrow text-sm font-medium uppercase tracking-[0.3em] text-white/70">

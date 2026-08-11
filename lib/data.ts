@@ -23,7 +23,7 @@ export const heroContent: HeroContent = {
   eyebrow: "Blok M Serpong Lagoon",
   title: "Memintarkan Serpong Lagoon",
   subtitle:
-    "Komunitas Domino di Komplek Serpong Lagoon — tempat strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
+    "Komunitas Domino di Komplek Serpong Lagoon — Strategi, Bercanda dan Persahabatan bertemu di atas satu meja.",
   scrollCue: "Scroll to explore",
   imageSrc: "https://picsum.photos/seed/blokm-hero/1920/1280",
   imageAlt:
@@ -182,7 +182,7 @@ export const contactInfo: ContactInfo = {
   email: "halo@blokmserponglagoon.id",
 };
 
-export const heroMarqueeText = "Strategi. Gertakan. Kemenangan.";
+export const heroMarqueeText = "Silaturahmi. Strategi. Bercanda. Kemenangan. Silaturahmi";
 export const ctaMarqueeText = "Siap Duduk Satu Meja?";
 
 export const ogImageSrc = "https://picsum.photos/seed/blokm-og/1200/630";
