@@ -4,6 +4,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -45,11 +46,22 @@ export default function HorizontalScrollText({ text }: { text: string }) {
   return (
     <section
       ref={sectionRef}
-      className="flex items-center overflow-hidden bg-surface py-12 md:h-screen md:py-0"
+      className="relative flex items-center overflow-hidden bg-surface py-12 md:h-screen md:py-0"
     >
+      <div className="absolute inset-0">
+        <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={1.2}
+          particleDensity={70}
+          particleColor="#D4A359"
+          speed={0.8}
+          className="h-full w-full"
+        />
+      </div>
       <div
         ref={trackRef}
-        className="flex flex-col gap-2 whitespace-normal px-6 md:flex-row md:flex-nowrap md:gap-16 md:whitespace-nowrap md:px-16"
+        className="relative z-10 flex flex-col gap-2 whitespace-normal px-6 md:flex-row md:flex-nowrap md:gap-16 md:whitespace-nowrap md:px-16"
       >
         {[0, 1, 2].map((i) => (
           <span
