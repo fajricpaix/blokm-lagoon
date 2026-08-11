@@ -20,14 +20,14 @@ export type HeroContent = {
 };
 
 export const heroContent: HeroContent = {
-  eyebrow: "Blok M Lagoon",
-  title: "Beyond The Table",
+  eyebrow: "Blok M Serpong Lagoon",
+  title: "Memintarkan Serpong Lagoon",
   subtitle:
-    "Komunitas dan turnamen domino di jantung Blok M — tempat strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
+    "Komunitas Domino di Komplek Serpong Lagoon — tempat strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
   scrollCue: "Scroll to explore",
   imageSrc: "https://picsum.photos/seed/blokm-hero/1920/1280",
   imageAlt:
-    "Meja domino close-up dengan kartu tersusun di bawah lampu temaram Blok M Lagoon",
+    "Meja domino close-up dengan kartu tersusun di bawah lampu temaram Blok M Serpong Lagoon",
 };
 
 export type ChapterContent = {
@@ -54,17 +54,17 @@ export const chapters: ChapterContent[] = [
     id: "the-community",
     eyebrow: "Chapter 02",
     title: "The Community",
-    body: "Blok M Lagoon lahir dari kumpulan pemain lepas yang rutin bertemu tiap akhir pekan. Kini komunitas ini menjadi rumah bagi puluhan anggota dari berbagai latar belakang — disatukan oleh satu meja, satu set kartu, dan semangat kompetisi yang sehat.",
+    body: "Blok M Serpong Lagoon lahir dari kumpulan pemain lepas yang rutin bertemu tiap akhir pekan. Kini komunitas ini menjadi rumah bagi puluhan anggota dari berbagai latar belakang — disatukan oleh satu meja, satu set kartu, dan semangat kompetisi yang sehat.",
     imageSrc: "https://picsum.photos/seed/blokm-the-community/1000/1250",
     imageAlt:
-      "Anggota komunitas Blok M Lagoon berkumpul dan tertawa di sela pertandingan domino",
+      "Anggota komunitas Blok M Serpong Lagoon berkumpul dan tertawa di sela pertandingan domino",
     align: "left",
   },
   {
     id: "the-tournament",
     eyebrow: "Chapter 03",
     title: "The Tournament",
-    body: "Setiap bulan, Blok M Lagoon menggelar turnamen dengan sistem gugur dan poin akumulasi. Tensinya naik di setiap ronde — satu keputusan salah bisa menentukan siapa yang melaju ke meja final.",
+    body: "Setiap bulan, Blok M Serpong Lagoon menggelar turnamen dengan sistem gugur dan poin akumulasi. Tensinya naik di setiap ronde — satu keputusan salah bisa menentukan siapa yang melaju ke meja final.",
     imageSrc: "https://picsum.photos/seed/blokm-the-tournament/1000/1250",
     imageAlt: "Suasana tegang turnamen domino dengan penonton mengelilingi meja final",
     align: "right",
@@ -73,9 +73,9 @@ export const chapters: ChapterContent[] = [
     id: "the-players",
     eyebrow: "Chapter 04",
     title: "The Players",
-    body: "Dari pemain rumahan sampai legenda meja, Blok M Lagoon dibesarkan oleh nama-nama yang dikenal lewat gaya main dan julukan masing-masing. Berikut beberapa wajah yang paling sering duduk di kursi juara.",
+    body: "Dari pemain rumahan sampai legenda meja, Blok M Serpong Lagoon dibesarkan oleh nama-nama yang dikenal lewat gaya main dan julukan masing-masing. Berikut beberapa wajah yang paling sering duduk di kursi juara.",
     imageSrc: "https://picsum.photos/seed/blokm-the-players/1000/1250",
-    imageAlt: "Potret salah satu pemain unggulan Blok M Lagoon memegang kartu domino",
+    imageAlt: "Potret salah satu pemain unggulan Blok M Serpong Lagoon memegang kartu domino",
     align: "left",
   },
 ];
@@ -162,8 +162,8 @@ export const tournamentSchedule: ScheduleItem[] = [
 export type SocialLink = { label: string; href: string };
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com/blokmlagoon" },
-  { label: "TikTok", href: "https://tiktok.com/@blokmlagoon" },
+  { label: "Instagram", href: "https://instagram.com/blokmserponglagoon" },
+  { label: "TikTok", href: "https://tiktok.com/@blokmserponglagoon" },
 ];
 
 export type ContactInfo = {
@@ -175,14 +175,18 @@ export type ContactInfo = {
 };
 
 export const contactInfo: ContactInfo = {
-  address: "Blok M Lagoon, Jl. Melawai Raya, Jakarta Selatan",
+  address: "Komplek Serpong Lagoon",
   hours: "Buka setiap hari, 16.00 – 23.00 WIB",
   whatsapp: "+62 812-3456-7890",
   whatsappHref: "https://wa.me/6281234567890",
-  email: "halo@blokmlagoon.id",
+  email: "halo@blokmserponglagoon.id",
 };
 
 export const heroMarqueeText = "Strategi. Gertakan. Kemenangan.";
 export const ctaMarqueeText = "Siap Duduk Satu Meja?";
 
 export const ogImageSrc = "https://picsum.photos/seed/blokm-og/1200/630";
+
+export const logoSrc = "/logo.JPG";
+export const logoAlt = "Logo Blok M Serpong Lagoon — olahraga domino bapak bapak, est. 2025";
+export const establishedYear = 2025;

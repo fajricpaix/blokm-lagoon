@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blok M Lagoon — Beyond The Table",
+  title: "Blok M Serpong Lagoon — Beyond The Table",
   description:
-    "Komunitas dan turnamen domino Blok M Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
+    "Komunitas dan turnamen domino Blok M Serpong Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
   openGraph: {
-    title: "Blok M Lagoon — Beyond The Table",
+    title: "Blok M Serpong Lagoon — Beyond The Table",
     description:
-      "Komunitas dan turnamen domino Blok M Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
+      "Komunitas dan turnamen domino Blok M Serpong Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
     images: [ogImageSrc],
   },
 };

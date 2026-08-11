@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import MenuOverlay from "@/components/MenuOverlay";
 import { useLenis } from "@/components/SmoothScrollProvider";
+import { logoAlt, logoSrc } from "@/lib/data";
 import type { NavLink } from "@/lib/data";
 
 const MENU_ID = "menu-overlay";
@@ -27,9 +29,16 @@ export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
         <button
           type="button"
           onClick={() => lenisRef?.current?.scrollTo(0)}
-          className="text-sm font-semibold uppercase tracking-[0.3em] text-white"
+          className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full sm:h-12 sm:w-12"
         >
-          Blok M Lagoon
+          <Image
+            src={logoSrc}
+            alt={logoAlt}
+            fill
+            sizes="48px"
+            className="object-cover"
+            priority
+          />
         </button>
         <button
           type="button"

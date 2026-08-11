@@ -43,7 +43,7 @@ export default function MenuOverlay({
         >
           <div className="flex items-center justify-between">
             <span className="text-sm font-semibold uppercase tracking-[0.3em]">
-              Blok M Lagoon
+              Blok M Serpong Lagoon
             </span>
             <button
               type="button"

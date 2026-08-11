@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { logoAlt, logoSrc, establishedYear } from "@/lib/data";
 import type { ContactInfo, SocialLink } from "@/lib/data";
 
 export default function Footer({
@@ -11,6 +13,9 @@ export default function Footer({
     <footer id="join-us" className="bg-black px-6 py-20 text-white sm:px-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
         <div className="flex flex-col gap-4">
+          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
+            <Image src={logoSrc} alt={logoAlt} fill sizes="56px" className="object-cover" />
+          </div>
           <span className="text-sm font-medium uppercase tracking-[0.3em] text-white/50">
             Join Us
           </span>
@@ -49,7 +54,8 @@ export default function Footer({
         </div>
       </div>
       <p className="mx-auto mt-16 max-w-6xl text-xs text-white/40">
-        © {new Date().getFullYear()} Blok M Lagoon. Semua hak cipta dilindungi.
+        © {new Date().getFullYear()} Blok M Serpong Lagoon · Est. {establishedYear}. Semua hak
+        cipta dilindungi.
       </p>
     </footer>
   );
