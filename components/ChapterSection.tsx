@@ -11,24 +11,28 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function ChapterSection({
   content,
+  children,
 }: {
   content: ChapterContent;
+  children?: React.ReactNode;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useGSAP(
     () => {
-      gsap.from(".chapter-reveal", {
-        opacity: 0,
-        y: 60,
-        duration: 0.9,
-        ease: "power3.out",
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-          toggleActions: "play none none reverse",
-        },
+      gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+        gsap.from(".chapter-reveal", {
+          opacity: 0,
+          y: 60,
+          duration: 0.9,
+          ease: "power3.out",
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 75%",
+            toggleActions: "play none none reverse",
+          },
+        });
       });
     },
     { scope: sectionRef }
@@ -48,7 +52,7 @@ export default function ChapterSection({
         }`}
       >
         <Image
-          src={`https://picsum.photos/seed/${content.imageSeed}/1000/1250`}
+          src={content.imageSrc}
           alt={content.imageAlt}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
@@ -69,6 +73,7 @@ export default function ChapterSection({
         <p className="chapter-reveal max-w-prose text-base leading-relaxed text-white/70 sm:text-lg">
           {content.body}
         </p>
+        {children}
       </div>
     </section>
   );

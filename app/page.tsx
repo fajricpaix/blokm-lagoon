@@ -18,8 +18,10 @@ import {
 } from "@/lib/data";
 
 export default function Home() {
-  const [gameChapter, communityChapter, tournamentChapter, playersChapter] =
-    chapters;
+  const gameChapter = chapters.find((c) => c.id === "the-game")!;
+  const communityChapter = chapters.find((c) => c.id === "the-community")!;
+  const tournamentChapter = chapters.find((c) => c.id === "the-tournament")!;
+  const playersChapter = chapters.find((c) => c.id === "the-players")!;
 
   return (
     <>
@@ -28,14 +30,16 @@ export default function Home() {
       <HorizontalScrollText text={heroMarqueeText} />
       <ChapterSection content={gameChapter} />
       <ChapterSection content={communityChapter} />
-      <ChapterSection content={tournamentChapter} />
-      <TournamentSchedule schedule={tournamentSchedule} />
-      <ChapterSection content={playersChapter} />
-      <div className="mx-auto grid max-w-6xl gap-6 px-6 pb-24 sm:grid-cols-2 lg:grid-cols-4">
-        {players.map((player) => (
-          <PlayerCard key={player.id} player={player} />
-        ))}
-      </div>
+      <ChapterSection content={tournamentChapter}>
+        <TournamentSchedule schedule={tournamentSchedule} />
+      </ChapterSection>
+      <ChapterSection content={playersChapter}>
+        <div className="grid gap-6 pt-2 sm:grid-cols-2">
+          {players.map((player) => (
+            <PlayerCard key={player.id} player={player} />
+          ))}
+        </div>
+      </ChapterSection>
       <HorizontalScrollText text={ctaMarqueeText} />
       <Footer contact={contactInfo} socialLinks={socialLinks} />
     </>

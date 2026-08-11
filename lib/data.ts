@@ -15,7 +15,7 @@ export type HeroContent = {
   title: string;
   subtitle: string;
   scrollCue: string;
-  imageSeed: string;
+  imageSrc: string;
   imageAlt: string;
 };
 
@@ -25,7 +25,7 @@ export const heroContent: HeroContent = {
   subtitle:
     "Komunitas dan turnamen domino di jantung Blok M — tempat strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
   scrollCue: "Scroll to explore",
-  imageSeed: "blokm-hero",
+  imageSrc: "https://picsum.photos/seed/blokm-hero/1920/1280",
   imageAlt:
     "Meja domino close-up dengan kartu tersusun di bawah lampu temaram Blok M Lagoon",
 };
@@ -35,7 +35,7 @@ export type ChapterContent = {
   eyebrow: string;
   title: string;
   body: string;
-  imageSeed: string;
+  imageSrc: string;
   imageAlt: string;
   align: "left" | "right";
 };
@@ -46,7 +46,7 @@ export const chapters: ChapterContent[] = [
     eyebrow: "Chapter 01",
     title: "The Game",
     body: "Domino bukan sekadar susun kartu — ini permainan hitung-hitungan, membaca lawan, dan menahan diri di saat yang tepat. Berabad-abad dimainkan lintas generasi, domino berkembang jadi olahraga strategi yang menuntut konsentrasi penuh dan kerja sama tim yang solid.",
-    imageSeed: "blokm-the-game",
+    imageSrc: "https://picsum.photos/seed/blokm-the-game/1000/1250",
     imageAlt: "Empat pemain domino berkonsentrasi menyusun kartu di atas meja kayu",
     align: "right",
   },
@@ -55,7 +55,7 @@ export const chapters: ChapterContent[] = [
     eyebrow: "Chapter 02",
     title: "The Community",
     body: "Blok M Lagoon lahir dari kumpulan pemain lepas yang rutin bertemu tiap akhir pekan. Kini komunitas ini menjadi rumah bagi puluhan anggota dari berbagai latar belakang — disatukan oleh satu meja, satu set kartu, dan semangat kompetisi yang sehat.",
-    imageSeed: "blokm-the-community",
+    imageSrc: "https://picsum.photos/seed/blokm-the-community/1000/1250",
     imageAlt:
       "Anggota komunitas Blok M Lagoon berkumpul dan tertawa di sela pertandingan domino",
     align: "left",
@@ -65,7 +65,7 @@ export const chapters: ChapterContent[] = [
     eyebrow: "Chapter 03",
     title: "The Tournament",
     body: "Setiap bulan, Blok M Lagoon menggelar turnamen dengan sistem gugur dan poin akumulasi. Tensinya naik di setiap ronde — satu keputusan salah bisa menentukan siapa yang melaju ke meja final.",
-    imageSeed: "blokm-the-tournament",
+    imageSrc: "https://picsum.photos/seed/blokm-the-tournament/1000/1250",
     imageAlt: "Suasana tegang turnamen domino dengan penonton mengelilingi meja final",
     align: "right",
   },
@@ -74,7 +74,7 @@ export const chapters: ChapterContent[] = [
     eyebrow: "Chapter 04",
     title: "The Players",
     body: "Dari pemain rumahan sampai legenda meja, Blok M Lagoon dibesarkan oleh nama-nama yang dikenal lewat gaya main dan julukan masing-masing. Berikut beberapa wajah yang paling sering duduk di kursi juara.",
-    imageSeed: "blokm-the-players",
+    imageSrc: "https://picsum.photos/seed/blokm-the-players/1000/1250",
     imageAlt: "Potret salah satu pemain unggulan Blok M Lagoon memegang kartu domino",
     align: "left",
   },
@@ -85,7 +85,7 @@ export type Player = {
   name: string;
   nickname: string;
   achievement: string;
-  imageSeed: string;
+  imageSrc: string;
   imageAlt: string;
 };
 
@@ -95,7 +95,7 @@ export const players: Player[] = [
     name: "Andra Wijaya",
     nickname: "Sang Kalkulator",
     achievement: "Juara Turnamen Tahunan 2024 & 2025",
-    imageSeed: "blokm-player-andra",
+    imageSrc: "https://picsum.photos/seed/blokm-player-andra/600/800",
     imageAlt: "Potret Andra Wijaya, pemain domino dengan julukan Sang Kalkulator",
   },
   {
@@ -103,7 +103,7 @@ export const players: Player[] = [
     name: "Rina Kusuma",
     nickname: "Ratu Gertak",
     achievement: "Runner-up 3 musim beruntun",
-    imageSeed: "blokm-player-rina",
+    imageSrc: "https://picsum.photos/seed/blokm-player-rina/600/800",
     imageAlt: "Potret Rina Kusuma, pemain domino dengan julukan Ratu Gertak",
   },
   {
@@ -111,7 +111,7 @@ export const players: Player[] = [
     name: "Bagas Prakoso",
     nickname: "Si Tenang",
     achievement: "Rekor kemenangan beruntun terbanyak: 14 partai",
-    imageSeed: "blokm-player-bagas",
+    imageSrc: "https://picsum.photos/seed/blokm-player-bagas/600/800",
     imageAlt: "Potret Bagas Prakoso, pemain domino dengan julukan Si Tenang",
   },
   {
@@ -119,7 +119,7 @@ export const players: Player[] = [
     name: "Maya Anggraini",
     nickname: "Legenda Lagoon",
     achievement: "Anggota pendiri, aktif bermain sejak 2016",
-    imageSeed: "blokm-player-maya",
+    imageSrc: "https://picsum.photos/seed/blokm-player-maya/600/800",
     imageAlt: "Potret Maya Anggraini, pemain domino dengan julukan Legenda Lagoon",
   },
 ];
@@ -184,3 +184,5 @@ export const contactInfo: ContactInfo = {
 
 export const heroMarqueeText = "Strategi. Gertakan. Kemenangan.";
 export const ctaMarqueeText = "Siap Duduk Satu Meja?";
+
+export const ogImageSrc = "https://picsum.photos/seed/blokm-og/1200/630";

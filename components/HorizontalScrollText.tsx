@@ -15,25 +15,29 @@ export default function HorizontalScrollText({ text }: { text: string }) {
     () => {
       const mm = gsap.matchMedia();
 
-      mm.add("(min-width: 768px)", () => {
-        const track = trackRef.current;
-        const section = sectionRef.current;
-        if (!track || !section) return;
+      mm.add(
+        "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+        () => {
+          const track = trackRef.current;
+          const section = sectionRef.current;
+          if (!track || !section) return;
 
-        const distance = track.scrollWidth - section.clientWidth;
+          if (track.scrollWidth - section.clientWidth <= 0) return;
 
-        gsap.to(track, {
-          x: -distance,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: () => `+=${distance}`,
-            scrub: true,
-            pin: true,
-          },
-        });
-      });
+          gsap.to(track, {
+            x: () => -(track.scrollWidth - section.clientWidth),
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: "top top",
+              end: () => `+=${track.scrollWidth - section.clientWidth}`,
+              scrub: true,
+              pin: true,
+              invalidateOnRefresh: true,
+            },
+          });
+        }
+      );
     },
     { scope: sectionRef }
   );
@@ -50,6 +54,7 @@ export default function HorizontalScrollText({ text }: { text: string }) {
         {[0, 1, 2].map((i) => (
           <span
             key={i}
+            aria-hidden={i !== 0 ? "true" : undefined}
             className="text-4xl font-semibold uppercase tracking-tight text-white sm:text-6xl md:text-[8vw]"
           >
             {text}

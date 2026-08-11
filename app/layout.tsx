@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
+import { ogImageSrc } from "@/lib/data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     title: "Blok M Lagoon — Beyond The Table",
     description:
       "Komunitas dan turnamen domino Blok M Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
-    images: ["https://picsum.photos/seed/blokm-og/1200/630"],
+    images: [ogImageSrc],
   },
 };
 

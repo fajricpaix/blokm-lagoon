@@ -10,13 +10,6 @@ const nextConfig: NextConfig = {
         pathname: "/**",
         search: "",
       },
-      {
-        protocol: "https",
-        hostname: "fastly.picsum.photos",
-        port: "",
-        pathname: "/**",
-        search: "",
-      },
     ],
   },
 };

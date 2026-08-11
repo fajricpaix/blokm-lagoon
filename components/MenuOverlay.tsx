@@ -1,21 +1,40 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
 import type { NavLink } from "@/lib/data";
 
 export default function MenuOverlay({
+  id,
   isOpen,
   onClose,
   navLinks,
 }: {
+  id?: string;
   isOpen: boolean;
   onClose: () => void;
   navLinks: NavLink[];
 }) {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          id={id}
+          role="dialog"
+          aria-modal="true"
           initial={{ clipPath: "inset(0 0 100% 0)" }}
           animate={{ clipPath: "inset(0 0 0% 0)" }}
           exit={{ clipPath: "inset(0 0 100% 0)" }}

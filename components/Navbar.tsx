@@ -2,25 +2,41 @@
 
 import { useState } from "react";
 import MenuOverlay from "@/components/MenuOverlay";
+import { useLenis } from "@/components/SmoothScrollProvider";
 import type { NavLink } from "@/lib/data";
+
+const MENU_ID = "menu-overlay";
 
 export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
   const [isOpen, setIsOpen] = useState(false);
+  const lenisRef = useLenis();
+
+  const openMenu = () => {
+    setIsOpen(true);
+    lenisRef?.current?.stop();
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    lenisRef?.current?.start();
+  };
 
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 sm:px-12">
-        <a
-          href="#"
+        <button
+          type="button"
+          onClick={() => lenisRef?.current?.scrollTo(0)}
           className="text-sm font-semibold uppercase tracking-[0.3em] text-white"
         >
           Blok M Lagoon
-        </a>
+        </button>
         <button
           type="button"
-          onClick={() => setIsOpen(true)}
+          onClick={openMenu}
           aria-label="Buka menu"
           aria-expanded={isOpen}
+          aria-controls={MENU_ID}
           className="flex flex-col gap-1.5 p-2"
         >
           <span className="h-px w-7 bg-white" />
@@ -28,8 +44,9 @@ export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
         </button>
       </header>
       <MenuOverlay
+        id={MENU_ID}
         isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
+        onClose={closeMenu}
         navLinks={navLinks}
       />
     </>

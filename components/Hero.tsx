@@ -15,21 +15,27 @@ export default function Hero({ content }: { content: HeroContent }) {
 
   useGSAP(
     () => {
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.from(".hero-eyebrow", { opacity: 0, y: 24, duration: 0.6 })
-        .from(".hero-title", { opacity: 0, y: 40, duration: 0.8 }, "-=0.4")
-        .from(".hero-subtitle", { opacity: 0, y: 24, duration: 0.6 }, "-=0.5")
-        .from(".hero-scroll-cue", { opacity: 0, duration: 0.6 }, "-=0.3");
+      gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+        tl.from(".hero-eyebrow", { opacity: 0, y: 24, duration: 0.6 })
+          .from(".hero-title", { opacity: 0, y: 40, duration: 0.8 }, "-=0.4")
+          .from(
+            ".hero-subtitle",
+            { opacity: 0, y: 24, duration: 0.6 },
+            "-=0.5"
+          )
+          .from(".hero-scroll-cue", { opacity: 0, duration: 0.6 }, "-=0.3");
 
-      gsap.to(imageRef.current, {
-        yPercent: 15,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
+        gsap.to(imageRef.current, {
+          yPercent: 15,
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
       });
     },
     { scope: sectionRef }
@@ -42,7 +48,7 @@ export default function Hero({ content }: { content: HeroContent }) {
     >
       <div ref={imageRef} className="absolute inset-0 -z-10 h-[115%] w-full">
         <Image
-          src={`https://picsum.photos/seed/${content.imageSeed}/1920/1280`}
+          src={content.imageSrc}
           alt={content.imageAlt}
           fill
           priority

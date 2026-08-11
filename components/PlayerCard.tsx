@@ -6,7 +6,7 @@ export default function PlayerCard({ player }: { player: Player }) {
     <div className="group relative flex flex-col overflow-hidden rounded-lg bg-white/5">
       <div className="relative aspect-[3/4] w-full overflow-hidden">
         <Image
-          src={`https://picsum.photos/seed/${player.imageSeed}/600/800`}
+          src={player.imageSrc}
           alt={player.imageAlt}
           fill
           sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
