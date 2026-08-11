@@ -64,13 +64,13 @@ export default function ChapterSection({
           imageFirst ? "md:order-2" : "md:order-1"
         }`}
       >
-        <span className="chapter-reveal text-sm font-medium uppercase tracking-[0.3em] text-white/50">
+        <span className="chapter-reveal text-sm font-medium uppercase tracking-[0.3em] text-gold">
           {content.eyebrow}
         </span>
-        <h2 className="chapter-reveal text-4xl font-semibold uppercase tracking-tight text-white sm:text-5xl">
+        <h2 className="chapter-reveal text-4xl font-semibold uppercase tracking-tight text-foreground sm:text-5xl">
           {content.title}
         </h2>
-        <p className="chapter-reveal max-w-prose text-base leading-relaxed text-white/70 sm:text-lg">
+        <p className="chapter-reveal max-w-prose text-base leading-relaxed text-sand sm:text-lg">
           {content.body}
         </p>
         {children}

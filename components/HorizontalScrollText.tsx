@@ -45,7 +45,7 @@ export default function HorizontalScrollText({ text }: { text: string }) {
   return (
     <section
       ref={sectionRef}
-      className="hidden md:flex items-center overflow-hidden bg-black py-12 md:h-screen md:py-0"
+      className="flex items-center overflow-hidden bg-surface py-12 md:h-screen md:py-0"
     >
       <div
         ref={trackRef}
@@ -55,7 +55,7 @@ export default function HorizontalScrollText({ text }: { text: string }) {
           <span
             key={i}
             aria-hidden={i !== 0 ? "true" : undefined}
-            className={`text-4xl font-semibold uppercase tracking-tight text-white sm:text-6xl md:text-[8vw] ${
+            className={`text-4xl font-semibold uppercase tracking-tight text-foreground sm:text-6xl md:text-[8vw] ${
               i !== 0 ? "hidden md:block" : ""
             }`}
           >

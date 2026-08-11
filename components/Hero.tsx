@@ -55,20 +55,20 @@ export default function Hero({ content }: { content: HeroContent }) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/20" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/50 to-transparent" />
       </div>
       <div className="relative z-10 flex w-full flex-col gap-4 px-6 pb-20 sm:px-12 sm:pb-28">
-        <span className="hero-eyebrow text-sm font-medium uppercase tracking-[0.3em] text-white/70">
+        <span className="hero-eyebrow text-sm font-medium uppercase tracking-[0.3em] text-sand">
           {content.eyebrow}
         </span>
-        <h1 className="hero-title max-w-4xl text-5xl font-semibold uppercase leading-[0.95] tracking-tight text-white sm:text-7xl md:text-8xl">
+        <h1 className="hero-title max-w-4xl text-5xl font-semibold uppercase leading-[0.95] tracking-tight text-foreground sm:text-7xl md:text-8xl">
           {content.title}
         </h1>
-        <p className="hero-subtitle max-w-xl text-base text-white/80 sm:text-lg">
+        <p className="hero-subtitle max-w-xl text-base text-foreground/80 sm:text-lg">
           {content.subtitle}
         </p>
-        <div className="hero-scroll-cue mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
-          <span className="h-8 w-px animate-pulse bg-white/60" />
+        <div className="hero-scroll-cue mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-sand">
+          <span className="h-8 w-px animate-pulse bg-gold" />
           {content.scrollCue}
         </div>
       </div>

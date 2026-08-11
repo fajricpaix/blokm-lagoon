@@ -39,7 +39,7 @@ export default function MenuOverlay({
           animate={{ clipPath: "inset(0 0 0% 0)" }}
           exit={{ clipPath: "inset(0 0 100% 0)" }}
           transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-          className="fixed inset-0 z-[60] flex flex-col justify-between bg-black px-6 py-6 text-white sm:px-12"
+          className="fixed inset-0 z-[60] flex flex-col justify-between bg-surface px-6 py-6 text-foreground sm:px-12"
         >
           <div className="flex items-center justify-between">
             <span className="text-sm font-semibold uppercase tracking-[0.3em]">
@@ -80,7 +80,7 @@ export default function MenuOverlay({
               </motion.a>
             ))}
           </motion.nav>
-          <span className="text-xs uppercase tracking-[0.2em] text-white/40">
+          <span className="text-xs uppercase tracking-[0.2em] text-sand/70">
             Beyond The Table
           </span>
         </motion.div>

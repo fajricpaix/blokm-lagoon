@@ -48,8 +48,8 @@ export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
           aria-controls={MENU_ID}
           className="flex flex-col gap-1.5 p-2"
         >
-          <span className="h-px w-7 bg-white" />
-          <span className="h-px w-7 bg-white" />
+          <span className="h-px w-7 bg-gold" />
+          <span className="h-px w-7 bg-gold" />
         </button>
       </header>
       <MenuOverlay
