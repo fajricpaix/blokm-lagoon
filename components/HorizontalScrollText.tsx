@@ -45,7 +45,7 @@ export default function HorizontalScrollText({ text }: { text: string }) {
   return (
     <section
       ref={sectionRef}
-      className="flex items-center overflow-hidden bg-black py-16 md:h-screen md:py-0"
+      className="hidden md:flex items-center overflow-hidden bg-black py-12 md:h-screen md:py-0"
     >
       <div
         ref={trackRef}

@@ -4,7 +4,7 @@ import type { Player } from "@/lib/data";
 export default function PlayerCard({ player }: { player: Player }) {
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-lg bg-white/5">
-      <div className="relative aspect-[3/4] w-full overflow-hidden">
+      <div className="relative aspect-3/4 w-full overflow-hidden">
         <Image
           src={player.imageSrc}
           alt={player.imageAlt}

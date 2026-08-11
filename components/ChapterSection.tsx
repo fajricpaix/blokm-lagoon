@@ -47,7 +47,7 @@ export default function ChapterSection({
       className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-24 md:flex-row md:items-center md:gap-16 md:py-36"
     >
       <div
-        className={`chapter-reveal relative aspect-[4/5] w-full overflow-hidden rounded-lg md:w-1/2 ${
+        className={`chapter-reveal relative aspect-4/5 w-full overflow-hidden rounded-lg md:w-1/2 ${
           imageFirst ? "md:order-1" : "md:order-2"
         }`}
       >
