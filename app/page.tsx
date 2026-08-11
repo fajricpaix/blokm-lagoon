@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HorizontalScrollText from "@/components/HorizontalScrollText";
 import ChapterSection from "@/components/ChapterSection";
-import PlayerCard from "@/components/PlayerCard";
+import PlayerGallery from "@/components/PlayerGallery";
 import TournamentSchedule from "@/components/TournamentSchedule";
 import Footer from "@/components/Footer";
 import {
@@ -33,13 +33,8 @@ export default function Home() {
       <ChapterSection content={tournamentChapter}>
         <TournamentSchedule schedule={tournamentSchedule} />
       </ChapterSection>
-      <ChapterSection content={playersChapter}>
-        <div className="grid gap-6 pt-2 sm:grid-cols-2">
-          {players.map((player) => (
-            <PlayerCard key={player.id} player={player} />
-          ))}
-        </div>
-      </ChapterSection>
+      <ChapterSection content={playersChapter} />
+      <PlayerGallery players={players} />
       <HorizontalScrollText text={ctaMarqueeText} />
       <Footer contact={contactInfo} socialLinks={socialLinks} />
     </>
