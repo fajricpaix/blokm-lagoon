@@ -109,7 +109,7 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
           </div>
         ))}
 
-        <div className="absolute inset-x-0 bottom-10 z-10 mx-auto h-20 w-full max-w-xl overflow-hidden px-6 text-center">
+        <div className="absolute inset-x-0 bottom-20 z-10 mx-auto h-20 w-full max-w-xl overflow-hidden px-6 text-center">
           {players.map((player, i) => (
             <div
               key={`${player.id}-caption`}
