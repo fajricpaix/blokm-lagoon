@@ -95,9 +95,9 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
               cardRefs.current[i] = el;
             }}
             style={{ transformStyle: "preserve-3d" }}
-            className="fixed inset-0 opacity-0 md:absolute"
+            className="fixed inset-0 flex flex-col items-center justify-center gap-4 opacity-0 md:absolute"
           >
-            <div className="absolute left-1/2 top-1/2 aspect-square w-[80%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-gold/30 sm:w-[60%] md:w-[25%]">
+            <div className="relative aspect-square w-[80%] overflow-hidden rounded-lg border border-gold/30 sm:w-[60%] md:w-[25%]">
               <Image
                 src={player.imageSrc}
                 alt={player.imageAlt}
@@ -106,17 +106,11 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
                 className="object-cover"
               />
             </div>
-          </div>
-        ))}
-
-        <div className="absolute inset-x-0 bottom-20 z-10 mx-auto h-20 w-full max-w-xl overflow-hidden px-6 text-center">
-          {players.map((player, i) => (
             <div
-              key={`${player.id}-caption`}
               ref={(el) => {
                 captionRefs.current[i] = el;
               }}
-              className="absolute inset-x-0 top-0 translate-y-25"
+              className="text-center"
             >
               <p className="text-lg font-semibold text-foreground">
                 {player.name}
@@ -125,8 +119,8 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
                 {player.nickname}
               </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
