@@ -15,11 +15,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Blok M Serpong Lagoon — Lebih dari Sekadar Meja",
   description:
     "Komunitas dan turnamen domino Blok M Serpong Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
   openGraph: {
+    title: "Blok M Serpong Lagoon — Lebih dari Sekadar Meja",
+    description:
+      "Komunitas dan turnamen domino Blok M Serpong Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",
+    images: [ogImageSrc],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Blok M Serpong Lagoon — Lebih dari Sekadar Meja",
     description:
       "Komunitas dan turnamen domino Blok M Serpong Lagoon. Strategi, gertakan, dan persahabatan bertemu di atas satu meja.",

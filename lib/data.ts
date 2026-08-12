@@ -245,8 +245,8 @@ export const galleryPhotos: GalleryPhoto[] = [
 export const heroMarqueeText = "Silaturahmi. Strategi. Bercanda. Kemenangan. Silaturahmi";
 export const ctaMarqueeText = "Siap Duduk Satu Meja?";
 
-export const ogImageSrc = "https://picsum.photos/seed/blokm-og/1200/630";
-
 export const logoSrc = "/logo.JPG";
 export const logoAlt = "Logo Blok M Serpong Lagoon — olahraga domino bapak bapak, est. 2025";
 export const establishedYear = 2025;
+
+export const ogImageSrc = logoSrc;
