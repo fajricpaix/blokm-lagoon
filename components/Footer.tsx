@@ -13,8 +13,8 @@ export default function Footer({
     <footer id="join-us" className="bg-surface px-6 py-20 text-foreground sm:px-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:justify-between">
         <div className="flex flex-col gap-4">
-          <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
-            <Image src={logoSrc} alt={logoAlt} fill sizes="56px" className="object-cover" />
+          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
+            <Image src={logoSrc} alt={logoAlt} fill sizes="80px" className="object-cover" />
           </div>
           <h2 className="max-w-md text-3xl font-semibold uppercase tracking-tight sm:text-4xl">
             Gabung Meja Kami
@@ -45,7 +45,7 @@ export default function Footer({
         </div>
       </div>
       <p className="mx-auto mt-16 max-w-6xl text-xs text-sand/60">
-        © {new Date().getFullYear()} Blok M Serpong Lagoon · Est. {establishedYear}. Semua hak
+        © {new Date().getFullYear()} Blok M Serpong Lagoon · Sejak {establishedYear}. Semua hak
         cipta dilindungi.
       </p>
     </footer>

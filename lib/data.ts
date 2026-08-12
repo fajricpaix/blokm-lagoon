@@ -3,11 +3,10 @@
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
-  { label: "The Game", href: "#the-game" },
-  { label: "The Community", href: "#the-community" },
-  { label: "The Tournament", href: "#the-tournament" },
-  { label: "The Players", href: "#the-players" },
-  { label: "Join Us", href: "#join-us" },
+  { label: "Permainan", href: "#the-game" },
+  { label: "Komunitas", href: "#the-community" },
+  { label: "Turnamen", href: "#the-tournament" },
+  { label: "Gabung", href: "#join-us" },
 ];
 
 export type HeroContent = {
@@ -24,7 +23,7 @@ export const heroContent: HeroContent = {
   title: "Memintarkan Serpong Lagoon",
   subtitle:
     "Komunitas Domino di Komplek Serpong Lagoon — Strategi, Bercanda dan Persahabatan bertemu di atas satu meja.",
-  scrollCue: "Scroll to explore",
+  scrollCue: "Gulir untuk menjelajah",
   imageSrc: "/top-bg.png",
   imageAlt:
     "Meja domino close-up dengan kartu tersusun di bawah lampu temaram Blok M Serpong Lagoon",
@@ -43,8 +42,8 @@ export type ChapterContent = {
 export const chapters: ChapterContent[] = [
   {
     id: "the-game",
-    eyebrow: "Chapter 01",
-    title: "The Game",
+    eyebrow: "Bab 01",
+    title: "Permainan",
     body: "Domino bukan sekadar susun kartu — ini permainan hitung-hitungan, membaca lawan, dan menahan diri di saat yang tepat. Berabad-abad dimainkan lintas generasi, domino berkembang jadi olahraga strategi yang menuntut konsentrasi penuh dan kerja sama tim yang solid.",
     imageSrc: "/chapters/1.png",
     imageAlt: "Empat pemain domino berkonsentrasi menyusun kartu di atas meja kayu",
@@ -52,8 +51,8 @@ export const chapters: ChapterContent[] = [
   },
   {
     id: "the-community",
-    eyebrow: "Chapter 02",
-    title: "The Community",
+    eyebrow: "Bab 02",
+    title: "Komunitas",
     body: "Blok M Serpong Lagoon lahir dari kumpulan pemain lepas yang rutin bertemu tiap akhir pekan. Kini komunitas ini menjadi tempat bagi warga lagoo dari berbagai latar belakang — disatukan oleh satu meja, satu set batu domino dan obrolan yang sehat.",
     imageSrc: "/chapters/2.png",
     imageAlt:
@@ -62,21 +61,12 @@ export const chapters: ChapterContent[] = [
   },
   {
     id: "the-tournament",
-    eyebrow: "Chapter 03",
-    title: "The Tournament",
+    eyebrow: "Bab 03",
+    title: "Turnamen",
     body: "Setiap tahun, Blok M Serpong Lagoon menggelar turnamen dengan sistem gugur. Tensinya naik di setiap ronde — satu keputusan salah bisa menentukan siapa yang melaju ke meja final.",
     imageSrc: "/chapters/3.png",
     imageAlt: "Suasana tegang turnamen domino dengan penonton mengelilingi meja final",
     align: "right",
-  },
-  {
-    id: "the-players",
-    eyebrow: "Chapter 04",
-    title: "The Players",
-    body: "Dari pemain rumahan sampai legenda meja, Blok M Serpong Lagoon dibesarkan oleh nama-nama yang dikenal lewat gaya permainan dan julukannya masing-masing. Berikut beberapa wajah yang paling sering duduk di meja domino.",
-    imageSrc: "https://picsum.photos/seed/blokm-the-players/1000/1250",
-    imageAlt: "Potret salah satu pemain unggulan Blok M Serpong Lagoon memegang kartu domino",
-    align: "left",
   },
 ];
 
@@ -188,7 +178,7 @@ export const tournamentSchedule: ScheduleItem[] = [
     id: "mingguan",
     name: "Meja Mingguan",
     cadence: "Tiap Weekend 19.00 WIB",
-    format: "Round Robin Santai",
+    format: "Semua Lawan Semua - Santai",
     description:
       "Sesi latihan dan silaturahmi mingguan, terbuka untuk anggota baru maupun tamu yang ingin coba-coba.",
   },
@@ -196,7 +186,7 @@ export const tournamentSchedule: ScheduleItem[] = [
     id: "tahunan",
     name: "Kejuaraan Tahunan",
     cadence: "Agustus",
-    format: "Knockout System + Meja Final",
+    format: "Sistem Gugur + Meja Final",
     description:
       "Puncak musim — Penentuan siapa yang berhak duduk tahta tertinggi Blok M - Serpong Lagoon.",
   },
@@ -219,6 +209,38 @@ export const contactInfo: ContactInfo = {
   hours: "Buka setiap hari, 16.00 – 23.00 WIB",
   email: "lagoon.domino@gmail.com",
 };
+
+export type GalleryPhoto = {
+  title: string;
+  url: string;
+};
+
+export const galleryPhotos: GalleryPhoto[] = [
+  {
+    title: "Meja Mingguan",
+    url: "https://picsum.photos/seed/blokm-gallery-1/700/700",
+  },
+  {
+    title: "Adu Strategi",
+    url: "https://picsum.photos/seed/blokm-gallery-2/700/700",
+  },
+  {
+    title: "Final Turnamen",
+    url: "https://picsum.photos/seed/blokm-gallery-3/700/700",
+  },
+  {
+    title: "Tawa di Meja",
+    url: "https://picsum.photos/seed/blokm-gallery-4/700/700",
+  },
+  {
+    title: "Piala Tahunan",
+    url: "https://picsum.photos/seed/blokm-gallery-5/700/700",
+  },
+  {
+    title: "Warga Lagoon",
+    url: "https://picsum.photos/seed/blokm-gallery-6/700/700",
+  },
+];
 
 export const heroMarqueeText = "Silaturahmi. Strategi. Bercanda. Kemenangan. Silaturahmi";
 export const ctaMarqueeText = "Siap Duduk Satu Meja?";

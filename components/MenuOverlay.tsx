@@ -81,7 +81,7 @@ export default function MenuOverlay({
             ))}
           </motion.nav>
           <span className="text-xs uppercase tracking-[0.2em] text-sand/70">
-            Beyond The Table
+            Lebih dari Sekadar Meja
           </span>
         </motion.div>
       )}

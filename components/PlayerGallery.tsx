@@ -60,6 +60,7 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
       ref={sectionRef}
       style={{ height: `${players.length * 100}vh` }}
       className="relative"
+      id="the-players"
     >
       <div
         ref={stageRef}
@@ -76,6 +77,15 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-background/40" />
+        </div>
+
+        <div className="absolute inset-x-0 top-0 z-20 px-6 pt-28 text-center sm:pt-14">
+          <span className="text-sm font-medium uppercase tracking-[0.3em] text-gold">
+            Bab 04
+          </span>
+          <h2 className="mt-2 text-3xl font-semibold uppercase tracking-tight text-foreground sm:text-5xl">
+            Para Pemain
+          </h2>
         </div>
 
         {players.map((player, i) => (
@@ -106,7 +116,7 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
               ref={(el) => {
                 captionRefs.current[i] = el;
               }}
-              className="absolute inset-x-0 top-0 translate-y-[100px]"
+              className="absolute inset-x-0 top-0 translate-y-25"
             >
               <p className="text-lg font-semibold text-foreground">
                 {player.name}

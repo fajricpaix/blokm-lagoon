@@ -2,11 +2,13 @@ import ChapterSection from "@/components/ChapterSection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import PhotoGallery from "@/components/PhotoGallery";
 import PlayerGallery from "@/components/PlayerGallery";
 import TournamentSchedule from "@/components/TournamentSchedule";
 import {
   chapters,
   contactInfo,
+  galleryPhotos,
   heroContent,
   navLinks,
   players,
@@ -29,6 +31,7 @@ export default function Home() {
         <TournamentSchedule schedule={tournamentSchedule} />
       </ChapterSection>
       <PlayerGallery players={players} />
+      <PhotoGallery photos={galleryPhotos} />
       <Footer contact={contactInfo} socialLinks={socialLinks} />
     </>
   );

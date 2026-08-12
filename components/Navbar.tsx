@@ -25,17 +25,18 @@ export default function Navbar({ navLinks }: { navLinks: NavLink[] }) {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 sm:px-12">
+      <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-linear-to-b from-background/80 via-background/40 to-transparent px-6 py-4 backdrop-blur-sm sm:px-12 sm:py-5">
         <button
           type="button"
           onClick={() => lenisRef?.current?.scrollTo(0)}
-          className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full sm:h-12 sm:w-12"
+          aria-label="Kembali ke atas"
+          className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-gold/60 shadow-lg shadow-black/40 transition-transform duration-300 hover:scale-105 sm:h-20 sm:w-20"
         >
           <Image
             src={logoSrc}
             alt={logoAlt}
             fill
-            sizes="48px"
+            sizes="(min-width: 640px) 80px, 64px"
             className="object-cover"
             priority
           />
