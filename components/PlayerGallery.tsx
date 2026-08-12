@@ -79,7 +79,7 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
           <div className="absolute inset-0 bg-background/40" />
         </div>
 
-        <div className="absolute inset-x-0 top-0 z-20 px-6 pt-28 text-center sm:pt-14">
+        <div className="absolute inset-x-0 top-0 z-20 px-6 pt-28 text-center md:pt-32">
           <span className="text-sm font-medium uppercase tracking-[0.3em] text-gold">
             Bab 04
           </span>
@@ -97,7 +97,7 @@ export default function PlayerGallery({ players }: { players: Player[] }) {
             style={{ transformStyle: "preserve-3d" }}
             className="fixed inset-0 opacity-0 md:absolute"
           >
-            <div className="absolute left-1/2 top-1/2 aspect-square w-[70%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-gold/30 sm:w-[50%] md:w-[38%]">
+            <div className="absolute left-1/2 top-1/2 aspect-square w-[80%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-gold/30 sm:w-[60%] md:w-[25%]">
               <Image
                 src={player.imageSrc}
                 alt={player.imageAlt}
