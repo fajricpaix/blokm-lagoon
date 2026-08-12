@@ -122,6 +122,70 @@ export const players: Player[] = [
     imageSrc: "https://picsum.photos/seed/blokm-player-maya/600/800",
     imageAlt: "Potret Maya Anggraini, pemain domino dengan julukan Legenda Lagoon",
   },
+  {
+    id: "fajri",
+    name: "Uda Fajri",
+    nickname: "Sang Perancang",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-fajri/600/800",
+    imageAlt: "Potret Uda Fajri, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "edo",
+    name: "Uda Edo",
+    nickname: "Sang Penantang",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-edo/600/800",
+    imageAlt: "Potret Uda Edo, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "rt-aldhi",
+    name: "Pak RT Aldhi",
+    nickname: "Sang Penjaga Wilayah",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-aldhi/600/800",
+    imageAlt: "Potret Pak RT Aldhi, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "lucky",
+    name: "Om Lucky",
+    nickname: "Sang Pembawa Hoki",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-lucky/600/800",
+    imageAlt: "Potret Om Lucky, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "agung",
+    name: "Om Agung",
+    nickname: "Sang Kokoh",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-agung/600/800",
+    imageAlt: "Potret Om Agung, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "habib-ali",
+    name: "Habib Ali",
+    nickname: "Sang Bijak",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-habibali/600/800",
+    imageAlt: "Potret Habib Ali, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "hayogi",
+    name: "Om Hayogi",
+    nickname: "Sang Penyemangat",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-hayogi/600/800",
+    imageAlt: "Potret Om Hayogi, pemain domino Blok M Serpong Lagoon",
+  },
+  {
+    id: "osa",
+    name: "Adek Osa",
+    nickname: "Sang Penerus",
+    achievement: "Anggota Blok M Serpong Lagoon",
+    imageSrc: "https://picsum.photos/seed/blokm-player-osa/600/800",
+    imageAlt: "Potret Adek Osa, pemain domino Blok M Serpong Lagoon",
+  },
 ];
 
 export type ScheduleItem = {
@@ -144,7 +208,7 @@ export const tournamentSchedule: ScheduleItem[] = [
   {
     id: "tahunan",
     name: "Kejuaraan Tahunan",
-    cadence: "Desember",
+    cadence: "Agustus",
     format: "Knockout System + Meja Final",
     description:
       "Puncak musim — Penentuan siapa yang berhak duduk tahta tertinggi Blok M - Serpong Lagoon.",
@@ -154,24 +218,19 @@ export const tournamentSchedule: ScheduleItem[] = [
 export type SocialLink = { label: string; href: string };
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com/blokmserponglagoon" },
-  { label: "TikTok", href: "https://tiktok.com/@blokmserponglagoon" },
+  { label: "Instagram", href: "https://www.instagram.com/lagoon.domino/" },
 ];
 
 export type ContactInfo = {
   address: string;
   hours: string;
-  whatsapp: string;
-  whatsappHref: string;
   email: string;
 };
 
 export const contactInfo: ContactInfo = {
   address: "Komplek Serpong Lagoon",
   hours: "Buka setiap hari, 16.00 – 23.00 WIB",
-  whatsapp: "+62 812-3456-7890",
-  whatsappHref: "https://wa.me/6281234567890",
-  email: "halo@blokmserponglagoon.id",
+  email: "lagoon.domino@gmail.com",
 };
 
 export const heroMarqueeText = "Silaturahmi. Strategi. Bercanda. Kemenangan. Silaturahmi";

@@ -1,0 +1,85 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button [ref=e3]:
+      - img "Logo Blok M Serpong Lagoon — olahraga domino bapak bapak, est. 2025" [ref=e4]
+    - button "Buka menu" [ref=e5]
+  - generic [ref=e8]:
+    - img "Meja domino close-up dengan kartu tersusun di bawah lampu temaram Blok M Serpong Lagoon" [ref=e10]
+    - generic [ref=e12]:
+      - generic [ref=e13]: Blok M Serpong Lagoon
+      - heading "Memintarkan Serpong Lagoon" [level=1] [ref=e14]
+      - paragraph [ref=e15]: Komunitas Domino di Komplek Serpong Lagoon — Strategi, Bercanda dan Persahabatan bertemu di atas satu meja.
+      - generic [ref=e16]: Scroll to explore
+  - generic [ref=e18]:
+    - img "Empat pemain domino berkonsentrasi menyusun kartu di atas meja kayu" [ref=e20]
+    - generic [ref=e21]:
+      - generic [ref=e22]: Chapter 01
+      - heading "The Game" [level=2] [ref=e23]
+      - paragraph [ref=e24]: Domino bukan sekadar susun kartu — ini permainan hitung-hitungan, membaca lawan, dan menahan diri di saat yang tepat. Berabad-abad dimainkan lintas generasi, domino berkembang jadi olahraga strategi yang menuntut konsentrasi penuh dan kerja sama tim yang solid.
+  - generic [ref=e25]:
+    - img "Anggota komunitas Blok M Serpong Lagoon berkumpul dan tertawa di sela pertandingan domino" [ref=e27]
+    - generic [ref=e28]:
+      - generic [ref=e29]: Chapter 02
+      - heading "The Community" [level=2] [ref=e30]
+      - paragraph [ref=e31]: Blok M Serpong Lagoon lahir dari kumpulan pemain lepas yang rutin bertemu tiap akhir pekan. Kini komunitas ini menjadi tempat bagi warga lagoo dari berbagai latar belakang — disatukan oleh satu meja, satu set batu domino dan obrolan yang sehat.
+  - generic [ref=e32]:
+    - img "Suasana tegang turnamen domino dengan penonton mengelilingi meja final" [ref=e34]
+    - generic [ref=e35]:
+      - generic [ref=e36]: Chapter 03
+      - heading "The Tournament" [level=2] [ref=e37]
+      - paragraph [ref=e38]: Setiap tahun, Blok M Serpong Lagoon menggelar turnamen dengan sistem gugur. Tensinya naik di setiap ronde — satu keputusan salah bisa menentukan siapa yang melaju ke meja final.
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "Meja Mingguan" [level=3] [ref=e41]
+          - generic [ref=e42]: Tiap Weekend 19.00 WIB
+          - generic [ref=e43]: Round Robin Santai
+          - paragraph [ref=e44]: Sesi latihan dan silaturahmi mingguan, terbuka untuk anggota baru maupun tamu yang ingin coba-coba.
+        - generic [ref=e45]:
+          - heading "Kejuaraan Tahunan" [level=3] [ref=e46]
+          - generic [ref=e47]: Desember
+          - generic [ref=e48]: Knockout System + Meja Final
+          - paragraph [ref=e49]: Puncak musim — Penentuan siapa yang berhak duduk tahta tertinggi Blok M - Serpong Lagoon.
+  - generic [ref=e50]:
+    - img "Potret salah satu pemain unggulan Blok M Serpong Lagoon memegang kartu domino" [ref=e52]
+    - generic [ref=e53]:
+      - generic [ref=e54]: Chapter 04
+      - heading "The Players" [level=2] [ref=e55]
+      - paragraph [ref=e56]: Dari pemain rumahan sampai legenda meja, Blok M Serpong Lagoon dibesarkan oleh nama-nama yang dikenal lewat gaya permainan dan julukannya masing-masing. Berikut beberapa wajah yang paling sering duduk di meja domino.
+  - generic [ref=e58]:
+    - img "Potret Andra Wijaya, pemain domino dengan julukan Sang Kalkulator" [ref=e63]
+    - img "Potret Rina Kusuma, pemain domino dengan julukan Ratu Gertak" [ref=e66]
+    - img "Potret Bagas Prakoso, pemain domino dengan julukan Si Tenang" [ref=e69]
+    - img "Potret Maya Anggraini, pemain domino dengan julukan Legenda Lagoon" [ref=e72]
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - paragraph [ref=e75]: Ketua Sugi
+        - paragraph [ref=e76]: Sang Ketua
+      - generic [ref=e77]:
+        - paragraph [ref=e78]: Uda Abdi
+        - paragraph [ref=e79]: Sang Kalkulator
+      - generic [ref=e80]:
+        - paragraph [ref=e81]: Champ Julio
+        - paragraph [ref=e82]: Sumbu Pendek
+      - generic [ref=e83]:
+        - paragraph [ref=e84]: King Ryci
+        - paragraph [ref=e85]: Nanti Balik Lagi
+  - contentinfo [ref=e86]:
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - img "Logo Blok M Serpong Lagoon — olahraga domino bapak bapak, est. 2025" [ref=e90]
+        - generic [ref=e91]: Join Us
+        - heading "Gabung Meja Kami" [level=2] [ref=e92]
+        - paragraph [ref=e93]: Komplek Serpong Lagoon
+        - paragraph [ref=e94]: Buka setiap hari, 16.00 – 23.00 WIB
+      - generic [ref=e95]:
+        - link "+62 812-3456-7890" [ref=e96] [cursor=pointer]:
+          - /url: https://wa.me/6281234567890
+        - link "halo@blokmserponglagoon.id" [ref=e97] [cursor=pointer]:
+          - /url: mailto:halo@blokmserponglagoon.id
+        - generic [ref=e98]:
+          - link "Instagram" [ref=e99] [cursor=pointer]:
+            - /url: https://instagram.com/blokmserponglagoon
+          - link "TikTok" [ref=e100] [cursor=pointer]:
+            - /url: https://tiktok.com/@blokmserponglagoon
+    - paragraph [ref=e101]: © 2026 Blok M Serpong Lagoon · Est. 2025. Semua hak cipta dilindungi.
+  - button "Open Next.js Dev Tools" [ref=e107] [cursor=pointer]

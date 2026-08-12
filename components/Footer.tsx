@@ -16,9 +16,6 @@ export default function Footer({
           <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
             <Image src={logoSrc} alt={logoAlt} fill sizes="56px" className="object-cover" />
           </div>
-          <span className="text-sm font-medium uppercase tracking-[0.3em] text-gold">
-            Join Us
-          </span>
           <h2 className="max-w-md text-3xl font-semibold uppercase tracking-tight sm:text-4xl">
             Gabung Meja Kami
           </h2>
@@ -26,12 +23,6 @@ export default function Footer({
           <p className="text-sand">{contact.hours}</p>
         </div>
         <div className="flex flex-col gap-4">
-          <a
-            href={contact.whatsappHref}
-            className="text-lg font-medium text-gold underline decoration-gold/40 underline-offset-4 hover:text-flame hover:decoration-flame"
-          >
-            {contact.whatsapp}
-          </a>
           <a
             href={`mailto:${contact.email}`}
             className="text-sand hover:text-foreground"
