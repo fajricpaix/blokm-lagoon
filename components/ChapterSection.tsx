@@ -30,7 +30,8 @@ export default function ChapterSection({
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 75%",
-            toggleActions: "play none none reverse",
+            end: "bottom 25%",
+            toggleActions: "play reverse play reverse",
           },
         });
       });

@@ -36,6 +36,18 @@ export default function Hero({ content }: { content: HeroContent }) {
             scrub: true,
           },
         });
+
+        gsap.to(".hero-fade", {
+          opacity: 0,
+          y: -60,
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
       });
     },
     { scope: sectionRef }
@@ -57,7 +69,7 @@ export default function Hero({ content }: { content: HeroContent }) {
         />
         <div className="absolute inset-0 bg-linear-to-t from-background via-background/50 to-transparent" />
       </div>
-      <div className="relative z-10 flex w-full flex-col gap-4 px-6 pb-20 sm:px-12 sm:pb-28">
+      <div className="hero-fade relative z-10 flex w-full flex-col gap-4 px-6 pb-20 sm:px-12 sm:pb-28">
         <span className="hero-eyebrow text-sm font-medium uppercase tracking-[0.3em] text-sand">
           {content.eyebrow}
         </span>
