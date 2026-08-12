@@ -84,7 +84,6 @@ export type Player = {
   id: string;
   name: string;
   nickname: string;
-  achievement: string;
   imageSrc: string;
   imageAlt: string;
 };
@@ -94,7 +93,6 @@ export const players: Player[] = [
     id: "sugi",
     name: "Ketua Sugi",
     nickname: "Sang Ketua",
-    achievement: "Kuncen SC",
     imageSrc: "https://picsum.photos/seed/blokm-player-andra/600/800",
     imageAlt: "Potret Andra Wijaya, pemain domino dengan julukan Sang Kalkulator",
   },
@@ -102,7 +100,6 @@ export const players: Player[] = [
     id: "adbi",
     name: "Uda Abdi",
     nickname: "Sang Kalkulator",
-    achievement: "Marketing Permainan",
     imageSrc: "https://picsum.photos/seed/blokm-player-rina/600/800",
     imageAlt: "Potret Rina Kusuma, pemain domino dengan julukan Ratu Gertak",
   },
@@ -110,7 +107,6 @@ export const players: Player[] = [
     id: "julio",
     name: "Champ Julio",
     nickname: "Sumbu Pendek",
-    achievement: "Kang Ngantuk",
     imageSrc: "https://picsum.photos/seed/blokm-player-bagas/600/800",
     imageAlt: "Potret Bagas Prakoso, pemain domino dengan julukan Si Tenang",
   },
@@ -118,7 +114,6 @@ export const players: Player[] = [
     id: "ricy",
     name: "King Ryci",
     nickname: "Nanti Balik Lagi",
-    achievement: "Menang Mudah Ini",
     imageSrc: "https://picsum.photos/seed/blokm-player-maya/600/800",
     imageAlt: "Potret Maya Anggraini, pemain domino dengan julukan Legenda Lagoon",
   },
@@ -126,7 +121,6 @@ export const players: Player[] = [
     id: "fajri",
     name: "Uda Fajri",
     nickname: "Sang Perancang",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-fajri/600/800",
     imageAlt: "Potret Uda Fajri, pemain domino Blok M Serpong Lagoon",
   },
@@ -134,7 +128,6 @@ export const players: Player[] = [
     id: "edo",
     name: "Uda Edo",
     nickname: "Sang Penantang",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-edo/600/800",
     imageAlt: "Potret Uda Edo, pemain domino Blok M Serpong Lagoon",
   },
@@ -142,7 +135,6 @@ export const players: Player[] = [
     id: "rt-aldhi",
     name: "Pak RT Aldhi",
     nickname: "Sang Penjaga Wilayah",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-aldhi/600/800",
     imageAlt: "Potret Pak RT Aldhi, pemain domino Blok M Serpong Lagoon",
   },
@@ -150,7 +142,6 @@ export const players: Player[] = [
     id: "lucky",
     name: "Om Lucky",
     nickname: "Sang Pembawa Hoki",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-lucky/600/800",
     imageAlt: "Potret Om Lucky, pemain domino Blok M Serpong Lagoon",
   },
@@ -158,7 +149,6 @@ export const players: Player[] = [
     id: "agung",
     name: "Om Agung",
     nickname: "Sang Kokoh",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-agung/600/800",
     imageAlt: "Potret Om Agung, pemain domino Blok M Serpong Lagoon",
   },
@@ -166,7 +156,6 @@ export const players: Player[] = [
     id: "habib-ali",
     name: "Habib Ali",
     nickname: "Sang Bijak",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-habibali/600/800",
     imageAlt: "Potret Habib Ali, pemain domino Blok M Serpong Lagoon",
   },
@@ -174,7 +163,6 @@ export const players: Player[] = [
     id: "hayogi",
     name: "Om Hayogi",
     nickname: "Sang Penyemangat",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-hayogi/600/800",
     imageAlt: "Potret Om Hayogi, pemain domino Blok M Serpong Lagoon",
   },
@@ -182,7 +170,6 @@ export const players: Player[] = [
     id: "osa",
     name: "Adek Osa",
     nickname: "Sang Penerus",
-    achievement: "Anggota Blok M Serpong Lagoon",
     imageSrc: "https://picsum.photos/seed/blokm-player-osa/600/800",
     imageAlt: "Potret Adek Osa, pemain domino Blok M Serpong Lagoon",
   },
